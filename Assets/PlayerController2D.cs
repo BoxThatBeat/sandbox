@@ -74,9 +74,6 @@ public class PlayerController2D : MonoBehaviour
                     animator.Play("Player_attack" + i);
                 }
 
-                
-
-
             }
             else
             {
@@ -101,6 +98,7 @@ public class PlayerController2D : MonoBehaviour
             (Physics2D.Linecast(transform.position, groundCheckR.position, 1 << LayerMask.NameToLayer("Ground"))))
         {
             isGrounded = true;
+            isAttacking = false;
         }
         else
         {
