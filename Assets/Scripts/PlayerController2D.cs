@@ -42,6 +42,7 @@ public class PlayerController2D : MonoBehaviour
 
     private bool isCrouched = false;
 
+
     // Start is called before the first frame update
     void Start()
     {
